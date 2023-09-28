@@ -4,9 +4,10 @@ import React from 'react'
 
 const page = async () => {
     const getEnglishLeague = await filterLeague('2021')
+    const matches = [...getEnglishLeague.matches].reverse()//.slice(1, 20)
   return (
     <div className='w-[600px]'>
-        {getEnglishLeague.matches.map((data) => (
+        {matches.map((data) => (
             <div key={data.id}>
                 <LeagueTable data={data} />
             </div>

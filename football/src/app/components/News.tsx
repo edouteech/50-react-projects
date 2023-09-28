@@ -9,7 +9,7 @@ const News = async () => {
     const newsData:newsType[] = getNews.articles
 
   return (
-    <div className='w-[350px] bg-[rgb(40,46,58)] rounded-md px-2 md:px-6 py-12'>
+    <div className='w-[350px] bg-[rgb(255,255,255)] rounded-md px-2 md:px-6 py-12'>
         <h1 className='text-xl text-teal-400 font-bold mb-4'>News - Top Headlines</h1>
         <div>
             {newsData.map((news) => (

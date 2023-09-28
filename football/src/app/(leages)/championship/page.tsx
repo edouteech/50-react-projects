@@ -1,8 +1,17 @@
+import { filterLeague } from '@/app/api'
+import LeagueTable from '@/app/components/LeagueTable'
 import React from 'react'
 
-const page = () => {
+const page = async () => {
+    const getEnglishLeague = await filterLeague('2016')
   return (
-    <div>page</div>
+    <div className='w-[600px]'>
+        {getEnglishLeague.matches.map((data) => (
+            <div key={data.id}>
+                <LeagueTable data={data} />
+            </div>
+        ))}
+    </div>
   )
 }
 

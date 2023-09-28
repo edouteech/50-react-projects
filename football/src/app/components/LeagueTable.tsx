@@ -4,8 +4,8 @@ import Matches from "./Matches"
 
 const LeagueTable = ({data}:{data:matchesType}) => {
   return (
-    <div className='py-3 px-2 md:px-3 rounded-md flex flex-col bg-[rgb(40,46,58)]'>
-        <Competition data={data} />
+    <div className='pb-3 mb-2 rounded-md flex flex-col bg-slate-100 hover:bg-slate-300'>
+        <Competition className="" data={data} />
         <Matches data={data} />
     </div>
   )

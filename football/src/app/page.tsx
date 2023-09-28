@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <section className="px-2 md:px-4 md:w-[600px]">
       <div className='flex justify-between items-center md-4 md:mb-2'>
-        <h1 className='text-md md:text-xl font-bold'>MATCHES</h1>
+        <h1 className='text-md md:text-xl font-bold text-sky-900'>MATCHES</h1>
         <div className='px-4 py-0 md:py-1 bg-slate-600 rounded-md text-textPrimary text-sm'>
           <p>{dateConvert}</p>
         </div>

@@ -17,7 +17,7 @@ const Status = ({matchesList, matchesListFinished}:{matchesList:matchesType[], m
             <div className="w-full">
                 {statusMatch === 'TODAY' ? (
                     matchesList.map((data) => (
-                        <div key={data.id}>
+                        <div className="mb-1" key={data.id}>
                             {data.status === 'TIMED' && (
                                 <LeagueTable data={data} />
                             )}
@@ -35,13 +35,6 @@ const Status = ({matchesList, matchesListFinished}:{matchesList:matchesType[], m
                     ))
                 ) : null}
                 
-                {/* {statusMatch === 'TODAY' ? (
-                    matchesListFinished.map((data) => (
-                        <div key={data.id}>
-                            <LeagueTable data={data} />
-                        </div>
-                    ))
-                ) : null} */}
             </div>
         </div>
     )
